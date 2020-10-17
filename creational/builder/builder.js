@@ -36,3 +36,11 @@ class CarBuilder {
 		return this.car;
 	}
 }
+
+const myCar = new CarBuilder()
+		.addAutoPilot(true)
+		.addParktronic(true)
+		.updateEngine('V8')
+		.build();
+
+console.log(myCar);

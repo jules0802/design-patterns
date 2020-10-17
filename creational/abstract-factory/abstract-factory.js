@@ -21,3 +21,10 @@ class I3 {
 		return "i3 is a Family car!";
 	}
 }
+
+const produce = bmwProducer('sport');
+
+const myCar = produce(); 
+
+console.log(myCar.info());
+

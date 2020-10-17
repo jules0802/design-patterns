@@ -21,3 +21,21 @@ class Auto {
 		engine.simpleInterface()
 	}
 }
+//Engine 2.0
+// const myCar = new Auto();
+// const oldEngine  = new Engine2();
+
+// myCar.startEngine(oldEngine); // Engine 2.0 - tr-tr-tr
+
+// Engine V8 with Adapter
+const myCar = new Auto();
+const engineAdapter  = new EngineV8Adapter(new EngineV8());
+
+myCar.startEngine(engineAdapter); // Engine V8! - wroom wroom!
+
+// Engine V8 without Adapter
+
+// const myCar = new Auto();
+// const engineAdapter  = new EngineV8();
+
+// myCar.startEngine(engineAdapter); //Error 

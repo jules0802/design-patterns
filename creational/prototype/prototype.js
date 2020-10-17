@@ -11,3 +11,15 @@ class TeslaCar {
 		return new TeslaCar(this.model, this.price, this.interior, this.autopilot);
 	}
 }
+
+// Produce base auto 
+const prototypeCar = new TeslaCar('S', 80000, 'black', false);
+
+// Cloning of base auto
+const car1 = prototypeCar.produce();
+const car2 = prototypeCar.produce();
+const car3 = prototypeCar.produce();
+
+// changes for particular auto 
+car1.interior = 'white';
+car1.autopilot = true;
